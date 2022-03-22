@@ -1,8 +1,8 @@
 import './App.css';
-import Movies from './pages/Movies';
-import BulletinBoard from './pages/BulletinBoard';
-import FarmAnimals from './pages/FarmAnimals';
-import Main from './pages/Main';
+import Movies from './views/Movies';
+import BulletinBoard from './views/BulletinBoard';
+import FarmAnimals from './views/FarmAnimals';
+import Main from './views/Main';
 import Nav from './components/Nav';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ function App() {
       <div className="App">
         <Nav />
         <Switch>
-          <Route exact path="/main">
+          <Route exact path="/">
             <Main />
           </Route>
           <Route path="/movies">

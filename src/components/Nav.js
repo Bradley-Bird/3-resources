@@ -8,13 +8,13 @@ function Nav() {
       <Slink exact to="/">
         <h4>Home</h4>
       </Slink>
-      <Slink exact to="/movies">
+      <Slink to="/movies">
         <h4>Movies</h4>
       </Slink>
-      <Slink exact to="/bulletinboard">
+      <Slink to="/bulletinboard">
         <h4>Bulletin-Board</h4>
       </Slink>
-      <Slink exact to="/farmanimals">
+      <Slink to="/farmanimals">
         <h4>Farm-Animals</h4>
       </Slink>
     </List>
