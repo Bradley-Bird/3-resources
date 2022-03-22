@@ -1,10 +1,8 @@
-import { client, checkError } from './client';
+import { checkJsonError } from './client';
 
-export async function fetchMovies() {
-  //   const resp = await client.from('movies').select();
-  //   return checkError(resp);
+export async function fetchMovies(year) {
   const params = new URLSearchParams();
-  params.set('select', '*');
+  year !== 'All' ? params.set('year', `eq.${year}`) : params.set('select', '*');
   const resp = await fetch(
     `${process.env.REACT_APP_SUPABASE_URL}/rest/v1/movies?${params.toString()}`,
     {
@@ -15,5 +13,5 @@ export async function fetchMovies() {
     }
   );
   const data = await resp.json();
-  return data;
+  return checkJsonError(data);
 }

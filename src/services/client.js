@@ -10,3 +10,10 @@ export function checkError({ data, error }) {
   }
   return data;
 }
+
+export function checkJsonError(data) {
+  if (!data) {
+    throw new Error('No response from server');
+  }
+  return data;
+}
