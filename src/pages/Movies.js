@@ -6,7 +6,6 @@ function Movies() {
   useEffect(() => {
     const fetchData = async () => {
       const resp = await fetchMovies();
-      console.log(resp);
       setMovies(resp);
     };
     fetchData();
