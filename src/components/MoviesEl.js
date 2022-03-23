@@ -7,6 +7,7 @@ function MoviesEl({ movies }) {
       {movies.map((movie) => (
         <Card key={movie.id}>
           <p>{movie.title}</p>
+          <img src={movie.image} />
         </Card>
       ))}
     </Grid>
@@ -19,7 +20,7 @@ const Grid = styled.div`
   grid-gap: 3rem;
 `;
 const Card = styled.div`
-  font-family: 'Bilbo', cursive;
+  font-family: 'Poller One', cursive;
   margin-top: 10px;
   border: 2px black solid;
   padding: 10px;

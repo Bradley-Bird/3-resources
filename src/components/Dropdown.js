@@ -21,7 +21,7 @@ const StSelect = styled.select`
   border: none;
 
   option {
-    font-family: 'Bilbo', cursive;
+    font-family: 'Poller One', cursive;
     font-size: 1.5rem;
     color: black;
     background: rgb(56, 56, 56);
